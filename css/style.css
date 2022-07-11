@@ -96,7 +96,15 @@ margin-bottom: 200px;
 .contact .item + .item {
     margin-left: 50px;
 }
-
+.envelope {
+    background: #ffffff;
+    margin-right: 10px;
+    align-items: center;
+    color: #757575;
+}
+.envelope:hover {
+    color: var(--accent-color);
+}
 
 /*hero*/
 .hero {
