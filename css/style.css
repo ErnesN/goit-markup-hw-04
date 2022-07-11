@@ -83,6 +83,7 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
 margin-bottom: 200px;
+height: 16px;
 }
 .contact .contact-link:hover,
 .contact .contact-link:focus {
@@ -99,11 +100,11 @@ margin-bottom: 200px;
 .envelope {
     background: #ffffff;
     margin-right: 10px;
-    align-items: center;
-    color: #757575;
+    color: var(--primary-text-color);
 }
-.envelope:hover {
-    color: var(--accent-color);
+.contact-link .envelope:hover,
+.contact-link .envelope:focus {
+    fill: var(--accent-color);
 }
 
 /*hero*/
@@ -259,16 +260,21 @@ margin-bottom: 200px;
     border-radius: 0px 0px 4px 4px;
 }
 .social-stuff {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: 32px;
     padding-right: 32px;
 }
 .social-icon {
+    padding: 0;
     width: 44px;
     height: 44px;
     align-items: center;
     justify-content: center;
     border-radius: 0px 0px 4px 4px;
 }
+
 .media-icon:hover,
 .media-icon:focus {
     fill: #ffffff;
