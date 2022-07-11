@@ -147,12 +147,10 @@ margin-bottom: 200px;
 }
 
 .advantage-icon {
-    overflow: visible;
     width: 270px;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;
-    object-fit: contain;
 }
 
 .advantage-list {
