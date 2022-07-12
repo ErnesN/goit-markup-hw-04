@@ -78,17 +78,22 @@ header {
     margin-left: 50px;
 }
 
-.contact-link {
+.contact-link { 
+display: flex;
 font-weight: 500;
 line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--primary-text-color);
-margin-bottom: 200px;
 height: 16px;
+align-items: center;
 }
 .contact .contact-link:hover,
 .contact .contact-link:focus {
     color: var(--accent-color);
+}
+.contact .envelope:hover,
+.contact .envelope:focus {
+    fill: var(--accent-color);
 }
 
 .contact {
@@ -99,16 +104,15 @@ height: 16px;
 .contact .item + .item {
     margin-left: 50px;
 }
+
 .envelope {
-    fill:var(--primary-text-color);
-    background: #ffffff;
+    background-size: cover;
     margin-right: 10px;
-    color: var(--primary-text-color);
+    width: 16px;
+    height: 12px;
+    fill:var(--primary-text-color); 
 }
-.envelope:hover,
-.envelope:focus {
-    fill: var(--accent-color);
-}
+
 
 /*hero*/
 .hero {
@@ -252,15 +256,19 @@ height: 16px;
 }
 .stuff-position {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
     text-align: center;
+}
+.stuff-list .item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+     
 }
 .stuff-card {
     display: block; 
     padding-top: 30px;
     padding-bottom: 30px;
-    background: #FFFFFF; box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
+    background: #FFFFFF; 
+    border-radius: 0px 0px 4px 4px; 
 }
 .social-stuff {
     display: flex;
@@ -269,14 +277,30 @@ height: 16px;
     padding-left: 32px;
     padding-right: 32px;
 }
-.social-icon {
-    padding: 0;
-    width: 44px;
-    height: 44px;
-    fill: var(--primary-icon-color); 
+.social-stuff-list {
+    display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 0px 0px 4px 4px;  
+    width: 44px;
+    height: 44px;
+    
+}
+.social-stuff-item + .social-stuff-item {
+   margin-left: 10px; 
+}
+.stuff-link {
+    display: flex;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid transparent;
+    border-radius: 50%; 
+}
+
+.social-icon {
+    display: flex;
+    fill: var(--primary-icon-color); 
+    align-items: center;  
 }
 
 .social-icon:hover,
@@ -294,14 +318,14 @@ height: 16px;
 }
 
 .client-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 170px;
     height: 92px;
     fill:var(--primary-icon-color);
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .client-icon:hover,
@@ -333,7 +357,7 @@ height: 16px;
     margin-bottom: 9px;
 }
 .mail {
-    display: block;
+    display:block;
     margin-bottom: 9px;
 }
 
