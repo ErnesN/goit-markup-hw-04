@@ -3,6 +3,7 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
     --hero-color: #ffffff;
+    --primary-icon-color: #AFB1B8;
 }
 
 body {
@@ -28,12 +29,12 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-
+header {
+    border-bottom: 1px solid #ECECEC; 
+}
 .header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-    
 }
 .section {
     padding-top: 94px;
@@ -93,17 +94,19 @@ height: 16px;
 .contact {
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 .contact .item + .item {
     margin-left: 50px;
 }
 .envelope {
+    fill:var(--primary-text-color);
     background: #ffffff;
     margin-right: 10px;
     color: var(--primary-text-color);
 }
-.contact-link .envelope:hover,
-.contact-link .envelope:focus {
+.envelope:hover,
+.envelope:focus {
     fill: var(--accent-color);
 }
 
@@ -270,15 +273,41 @@ height: 16px;
     padding: 0;
     width: 44px;
     height: 44px;
+    fill: var(--primary-icon-color); 
     align-items: center;
     justify-content: center;
-    border-radius: 0px 0px 4px 4px;
+    border-radius: 0px 0px 4px 4px;  
 }
 
-.media-icon:hover,
-.media-icon:focus {
-    fill: #ffffff;
-    background: #2196F3;
+.social-icon:hover,
+.social-icon:focus {
+    fill: var(--accent-color);
+}
+
+/* Clients */
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+}
+
+.client-icon {
+    width: 170px;
+    height: 92px;
+    fill:var(--primary-icon-color);
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-icon:hover,
+.client-icon:focus {
+    fill:var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
 /*footer*/
@@ -301,7 +330,7 @@ height: 16px;
 }
 .address-street {
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 9px;
 }
 .mail {
     display: block;
