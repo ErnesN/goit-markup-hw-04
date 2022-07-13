@@ -152,13 +152,16 @@ align-items: center;
     color: var(--hero-color);
     background: var(--accent-color);
     border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border: 0;
     cursor: pointer;
 }
 
-.btn-hero:hover
+.btn-hero:hover,
 .btn-hero:focus {
-    background: #188CE8;
+    background: #188CE8;;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 /*Advantages*/
 .hidden {
