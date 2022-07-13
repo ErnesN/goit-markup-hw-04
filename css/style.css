@@ -117,7 +117,7 @@ align-items: center;
 /*hero*/
 .hero {
     margin: 0 auto;
-    width: 1600px;
+    max-width: 1600px;
     height: 600px;
     padding-bottom: 200px;
     padding-top: 200px;
@@ -263,15 +263,15 @@ align-items: center;
     text-align: center;
 }
 .stuff-list .item {
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-     
 }
+
 .stuff-card {
     display: block; 
     padding-top: 30px;
     padding-bottom: 30px;
-    background: #FFFFFF; 
-    border-radius: 0px 0px 4px 4px; 
 }
 .social-stuff {
     display: flex;
