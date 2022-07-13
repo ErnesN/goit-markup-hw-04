@@ -336,16 +336,17 @@ align-items: center;
     align-items: center;
     fill: var(--primary-icon-color); 
 }
-.client-icon:hover,
-.client-icon:focus {
-    fill: var(--accent-color);
-}
 
 .client-link:hover,
 .client-link:focus {
     border: 1px solid var(--accent-color);
 }
 
+.client-link:hover .client-icon,
+.client-link:focus .client-icon {
+    fill: var(--accent-color);
+    
+}
 /*footer*/
 .footer {
     padding-top: 60px;
