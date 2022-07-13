@@ -316,9 +316,10 @@ align-items: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
 }
-
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
 .client-item {
     display: flex;
     justify-content: center;
@@ -328,7 +329,12 @@ align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+}
 .client-icon {
     display: flex;
     justify-content: center;
@@ -339,6 +345,7 @@ align-items: center;
 .client-icon:focus {
     fill: var(--accent-color);
 }
+
 .client-item:hover,
 .client-item:focus {
     fill:var(--accent-color);
