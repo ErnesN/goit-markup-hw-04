@@ -369,6 +369,56 @@ align-items: center;
 .address .address-link:focus {
     color: var(--accent-color);
 }
+.footer-block {
+    display: flex;
+    align-items: center;
+}
+.social-footer {
+    margin-left: 70px;
+    margin-top: 0;
+    padding: 0;
+}
+.footer-title {
+    margin: 0;
+    margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+}
+.social-footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-footer-item {
+    border-radius: 50%;
+    justify-content: center;
+    background-position: center;
+    background: rgba(255, 255, 255, 0.1);
+}
+.social-footer-item + .social-footer-item {
+    margin-left: 10px;
+}
+.social-footer-link {
+    display: flex;
+    align-items: center;
+    height: 44px;
+    width: 44px;
+    justify-content: center;
+}
+.social-footer-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--hero-color);
+}
+.social-footer-item:hover,
+.social-footer-item:focus {
+    background-color: var(--accent-color);
+}
 /*portfolio*/
 .filter {
     display: flex;
