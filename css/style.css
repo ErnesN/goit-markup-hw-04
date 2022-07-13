@@ -320,20 +320,15 @@ align-items: center;
 .client-item:not(:last-child) {
     margin-right: 30px;
 }
-.client-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-}
+
 .client-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 170px;
     height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
 }
 .client-icon {
     display: flex;
@@ -346,9 +341,8 @@ align-items: center;
     fill: var(--accent-color);
 }
 
-.client-item:hover,
-.client-item:focus {
-    fill:var(--accent-color);
+.client-link:hover,
+.client-link:focus {
     border: 1px solid var(--accent-color);
 }
 
