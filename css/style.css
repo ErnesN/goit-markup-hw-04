@@ -374,6 +374,7 @@ align-items: center;
     align-items: baseline;
 }
 .social-footer {
+    display: block;
     margin-left: 70px;
     margin-top: 0;
     padding: 0;
