@@ -371,7 +371,7 @@ align-items: center;
 }
 .footer-block {
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 .social-footer {
     margin-left: 70px;
@@ -381,12 +381,12 @@ align-items: center;
 .footer-title {
     margin: 0;
     margin-bottom: 20px;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #FFFFFF;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 .social-footer-list {
     display: flex;
