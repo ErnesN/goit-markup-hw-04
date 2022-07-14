@@ -281,35 +281,37 @@ align-items: center;
     padding-left: 32px;
     padding-right: 32px;
 }
-.social-stuff-list {
-    display: flex;
-    align-items: center;
+.social-stuff-item {
     justify-content: center;
-    width: 44px;
-    height: 44px;
-    
+    background-position: center;
 }
 .social-stuff-item + .social-stuff-item {
    margin-left: 10px; 
 }
 .stuff-link {
     display: flex;
+    align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
-    border: 1px solid transparent;
     border-radius: 50%; 
 }
 
 .social-icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
     fill: var(--primary-icon-color); 
-    align-items: center;  
+    
+    
 }
-
-.social-icon:hover,
-.social-icon:focus {
-    fill: var(--accent-color);
+.stuff-link:hover,
+.stuff-link:focus {
+    background: var(--accent-color);
+}
+.stuff-link:hover .social-icon,
+.stuff-link:focus .social-icon {
+    fill: var(--hero-color);
 }
 
 /* Clients */
@@ -409,10 +411,8 @@ align-items: center;
     justify-content: center;
 }
 .social-footer-item {
-    border-radius: 50%;
     justify-content: center;
     background-position: center;
-    background: rgba(255, 255, 255, 0.1);
 }
 .social-footer-item + .social-footer-item {
     margin-left: 10px;
@@ -420,9 +420,11 @@ align-items: center;
 .social-footer-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 44px;
     width: 44px;
-    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
 }
 .social-footer-icon {
     display: flex;
@@ -430,8 +432,8 @@ align-items: center;
     justify-content: center;
     fill: var(--hero-color);
 }
-.social-footer-item:hover,
-.social-footer-item:focus {
+.social-footer-link:hover,
+.social-footer-link:focus {
     background-color: var(--accent-color);
 }
 /*portfolio*/
