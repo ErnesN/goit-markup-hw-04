@@ -164,10 +164,18 @@ align-items: center;
     border-radius: 4px;
 }
 /*Advantages*/
-.hidden {
-    display: none;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    1clip: rect(0 0 0 0);
+    overflow: hidden;
 }
-
 .advantage-icon {
     background: #F5F4FA;
     border-radius: 4px;
